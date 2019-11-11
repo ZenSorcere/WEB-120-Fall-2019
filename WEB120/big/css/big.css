@@ -1,0 +1,201 @@
+/* BIG WEB120 */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    background-color:darkgray;
+    /* font-family: 'Exo 2', sans-serif; */
+    font-family: 'Monda', sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */
+}
+
+main.wrapper, footer {
+    width:90%;
+    margin:auto;
+    background-color:#fff;
+    overflow:auto;
+}
+
+section {
+    float:left;
+    width:64%;
+    padding-left:2.5%;
+}
+
+aside {
+    float:right;
+    width:26%;
+    padding-right:2.5%;
+}
+
+header h1 {
+    text-align:left;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+.logo {
+    color:mediumblue;
+    margin-left:1%;
+    text-shadow:2px 2px darkgray;
+    font-size:1.75em;
+}
+
+h1,h2,h3,h5,h6 {
+    font-weight: normal;
+    padding:.5em;
+}
+
+section ul {
+    margin: 1em 2em;
+    padding-left: 2em;
+}
+
+section l1 {
+    margin: 1em;
+}
+
+figure img {
+    margin: 0 auto;
+    width: 80%;
+    display:block;
+    border: 1px solid #ddd;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+}
+
+li.h3 {
+    font-size: .8em; /* ol.h3 */
+    margin-bottom: 1.5em;
+}
+
+h3 {
+    font-weight:600;
+    padding: .5em;
+}
+
+aside ul {
+    padding: 1.5em;
+}
+
+h4 {
+    font-weight:600;
+    padding: .5em 0em 0em .5em;
+}
+
+p {
+    margin:1em .8em;
+}
+
+aside p {
+    margin: 1em .2em;
+}
+
+code {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+/* div.dot iframe {
+    border:0;
+    overflow:no;
+} */
+
+/* START Global Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.embed-container.agenda-view {
+    display:none;
+}
+
+/* END Global Embed Responsively Rules! */
+
+footer {
+    text-align:center;
+    text-transform:uppercase;
+    clear:both;
+}
+
+footer p {
+    padding:2em;
+}
+
+footer a {
+    color:mediumblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:white;
+    background-color:mediumblue;
+}
+
+/* breakpoint for moving aside beneath section */
+@media all and (max-width:1000px) {
+    
+    main.wrapper,footer {
+        width:100%;
+    }
+    
+    section {
+		width:80%;
+		display: block;
+        float:none;
+        margin: 0 auto;
+	}
+	
+	aside {	
+		width:80%;
+		display:block;
+        float:none;
+        margin: 0 auto;
+        padding-left:2.5%;   
+	}
+    
+    li.h3 {
+        margin-left: 3em;
+    }
+   } 
+
+/* Phat PHONE Rules! */
+@media all and (max-width:860px) {
+    div.wrapper {
+        background-color:blue;
+    }
+    
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+    
+    /* Hide Month View Calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}
+
+
