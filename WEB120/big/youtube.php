@@ -3,7 +3,7 @@ include "includes/config.php";
 include "includes/header.php" ?>
         
 <div class='embed-container'>
-    <iframe src='https://www.youtube.com/embed/srvUrASNj0s' frameborder='0' allowfullscreen></iframe>
+    <iframe src='https://www.youtube.com/embed/srvUrASNj0s' allowfullscreen></iframe>
 </div>
 
 
