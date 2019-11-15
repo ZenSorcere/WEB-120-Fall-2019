@@ -7,10 +7,10 @@ include "includes/header.php" ?>
  <p>Christmastown: A Holiday Noir</p>
    
 <!-- Show/Hide MONTH view calendar -->
- <div class='month-view embed-container'><iframe src='https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%234285F4&ctz=America%2FLos_Angeles&src=ajVnYWFxOTQ0OWhzdGZ0cXNndGs0MnNvY2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2330487E&showTitle=0&showDate=1&showTabs=1' style='border-width:0' width='800' height='600' frameborder='0' scrolling='no'></iframe></div>
+ <div class='month-view embed-container'><iframe src='https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%234285F4&ctz=America%2FLos_Angeles&src=ajVnYWFxOTQ0OWhzdGZ0cXNndGs0MnNvY2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2330487E&showTitle=0&showDate=1&showTabs=1' style='border-width:0' width='800' height='600'></iframe></div>
     
 <!-- Show/Hide AGENDA view calendar -->
-<div class='agenda-view embed-container'><iframe src='https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%234285F4&ctz=America%2FLos_Angeles&src=ajVnYWFxOTQ0OWhzdGZ0cXNndGs0MnNvY2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2330487E&showTitle=0&showDate=1&showTabs=1&mode=AGENDA' style='border-width:0' width='800' height='600' frameborder='0' scrolling='no'></iframe></div>
+<div class='agenda-view embed-container'><iframe src='https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%234285F4&ctz=America%2FLos_Angeles&src=ajVnYWFxOTQ0OWhzdGZ0cXNndGs0MnNvY2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2330487E&showTitle=0&showDate=1&showTabs=1&mode=AGENDA' style='border-width:0' width='800' height='600'></iframe></div>
 
 </section>
 <!-- END LEFT COL -->
