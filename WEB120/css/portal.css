@@ -79,6 +79,12 @@ footer {
 		width:60%;
 		float:left;
 	}
+    
+    section.aia {
+        width: 80%;
+        float:none;
+        margin:auto;
+    }
 	
      aside {	
 		width:30%;
@@ -108,6 +114,12 @@ footer {
 		width:60%;
 		float:left;
 	}
+    
+    section.aia {
+        width: 80%;
+        float:none;
+        margin:auto;
+    }
 	
 	aside {	
 		width:39%;

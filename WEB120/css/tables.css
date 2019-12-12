@@ -6,6 +6,18 @@ table {
     border-collapse: collapse;
     font-family: 'Titillium Web', sans-serif;
 }
+
+table.audience {
+    table-layout: fixed;
+}
+
+table.client {
+    width: 60%;
+}
+
+.audience ul {
+        margin-top: 0;
+    }
 caption {
     margin: .5em;
     font-weight: 700;
@@ -16,6 +28,10 @@ thead, th {
     color: #fff;
     border:2px solid #fff;
     padding: .6em;
+}
+
+.client th {
+    vertical-align: middle;
 }
 
 tr {
@@ -33,8 +49,12 @@ td {
   vertical-align: middle;
 }
 
+.audience td {
+    vertical-align: top;
+}
+
 /* TABLE CSS FOR SMALLER SCREENS */
-@media all and (max-width:700px) {
+@media all and (max-width:750px) {
     
     table, thead, tbody, th, td, tr, caption {
         display: block;
@@ -45,10 +65,14 @@ td {
         border-collapse: collapse;
     }
     
+    table.client {
+    width: 90%;
+}   
     
     thead {
         display: none;
     }
+    
     
     tr {
         border: 2px solid lightseagreen;
@@ -61,6 +85,10 @@ td {
         padding-left: 90px; 
     }
     
+    .audience td {
+        text-align: left;
+    }
+    
     td::before {
         position: absolute;
         left: 6px; 
@@ -69,7 +97,22 @@ td {
         white-space: nowrap;
         text-align: left;
     }
+/*
+    td.single::before {
+        clear: both;
+        display: none;
+        
+    }
     
+    
+    .client td::before {
+        display: none;
+        width: 1px;
+        left: 0px;
+        padding-right: 0px;
+        clear:none;
+    }
+  */  
     td:nth-of-type(1):before {
         content: "Food Name:";
     }
@@ -81,4 +124,22 @@ td {
      td:nth-of-type(3):before {
         content: "Cost:";
     }
+    
+    .audience td:nth-of-type(1):before {
+        content: "Audience:";
+    }
+    
+    .audience td:nth-of-type(2):before {
+        content: "Issues:";
+    }
+    
+    .audience td:nth-of-type(3):before {
+        content: "Approach:";
+    }
+    
+    .client td:nth-of-type(1):before {
+        content: none;
+    }
+    
+    
 }

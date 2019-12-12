@@ -1,0 +1,280 @@
+                /* FINAL PROJECT - WEB120 TEMPLATE CSS*/
+                /* Core css */
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    color: white;
+                    box-sizing: border-box;
+                }
+                
+                html,
+                body {
+                    background-color: darkgray;
+                    font-family: 'Arimo', sans-serif;
+                }
+                
+                main.wrapper,
+                footer {
+                    width: 90%;
+                    margin: auto;
+                    overflow: auto;
+                    background-color: rgb(26, 22, 22);
+                }
+                
+                section {
+                    padding-left: 2.5%;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                
+                header {
+                    margin: auto;
+                    background: black;
+                    text-align: center;
+                    line-height: 100px;
+                    padding: .5em;
+                }
+                
+                header h1 {
+                    color: seashell;
+                    text-align: center;
+                    display: inline-block;
+                    font-family: 'Engagement', cursive;
+                    font-size: 5em;
+                    line-height: 100px;
+                }
+                
+                header a:hover {
+                    text-decoration: none;
+                }
+                
+                img.logo {
+                    margin: 2em;
+                    width: 25%;
+                    max-width: 100%;
+                    border-radius: 50%;
+                }
+                
+                img.about {
+                    float: right;
+                    width: 40%;
+                    margin: 1em;
+                    border-radius: 25%;
+                }
+                
+                h1,
+                h2,
+                h3,
+                h5,
+                h6 {
+                    font-weight: normal;
+                    padding: .5em;
+                }
+                
+                h3 {
+                    font-weight: 600;
+                    padding: .5em;
+                }
+                
+                h4 {
+                    font-weight: 600;
+                    padding: .5em 0em 0em .5em;
+                }
+                
+                p {
+                    margin: 1em .8em;
+                }
+                /* SECTION FOR FLAGGING NARATIVE ELEMENTS */
+                
+                .important {
+                    background: darkslategrey;
+                    padding: .5em;
+                }
+                /* END NARRATIVE STYLES */
+                
+                aside {
+                    width: 75%;
+                    margin: 0 auto;
+                }
+                
+                aside p {
+                    padding-top: 1em;
+                }
+                /* SEARCH AND FILTER STYLES */
+                
+                .searchbox {
+                    padding-left: .8em;
+                }
+                
+                .button-group {
+                    padding: .5em 0 .5em .8em;
+                }
+                
+                button {
+                    color: #fff;
+                    background: linear-gradient(rgb(201, 199, 202) 0%, #3d3a3a 100%);
+                    border-radius: 10px;
+                    padding: .3em .8em;
+                    margin: .3em;
+                    background-image: linear-gradient(rgb(76, 2, 119) 0%, #323232 100%);
+                }
+                /* END SEARCH AND FILTER STYLES */
+                
+                footer {
+                    text-align: center;
+                    text-transform: uppercase;
+                    clear: both;
+                }
+                
+                footer p {
+                    padding: 2em;
+                }
+                
+                footer a {
+                    color: rgb(76, 76, 238);
+                    text-decoration: none;
+                }
+                
+                footer a:hover {
+                    color: white;
+                    background-color: rgb(76, 76, 238);
+                }
+                /* GRIDDER CATALOG ADJUSTMENTS for quickfliters */
+                
+                .gridder-navigation a {
+                    margin-right: .5em;
+                }
+                /* Needed CSS for JS Filtering */
+                
+                .gridder-list {
+                    display: none;
+                }
+                
+                .show {
+                    display: inline-block;
+                }
+                
+                .button.is-checked {
+                    color: rgb(206, 209, 17);
+                }
+                /* end of Quickfilter adjustments */
+                /* Gridder css adjustments */
+                
+                .gridder-expanded-content {
+                    background: linear-gradient(rgb(76, 2, 119) 0%, #323232 100%);
+                }
+                
+                .gridder-show {
+                    background: linear-gradient(#323232 100%, rgb(76, 2, 119) 0%);
+                    padding: .8em;
+                }
+                
+                .col-sm-6 img {
+                    padding: .5em;
+                }
+                
+                .col-sm-6 ul {
+                    list-style: none;
+                    padding: .5em;
+                }
+                
+                ul button {
+                    padding: 0 .5em;
+                    margin: .5em 0;
+                }
+                
+                button.purchase {
+                    padding: .3em 3em;
+                }
+                /* catalog/Gridder Disclaimer */
+                
+                p.license {
+                    font-size: .8em;
+                }
+                
+                p.footnote {
+                    text-align: center;
+                    width: 75%;
+                    margin: 0 auto;
+                    background-color: rgb(68, 18, 78);
+                    border: 2px solid darkred;
+                    border-radius: 5px;
+                    clear: both;
+                }
+                
+                @media all and (max-width:1000px) {
+                    .col-sm-6 {
+                        max-width: 100%;
+                        flex: 0 0 100%;
+                    }
+                }
+                /* BEGIN MEDIA QUERIES */
+                /* to avoid exceptionally large screen oddities */
+                
+                @media all and (max-width:1400px) {
+                    main.wrapper,
+                    footer {
+                        width: 100%;
+                    }
+                    section {
+                        width: 90%;
+                        display: block;
+                        float: none;
+                        margin: 0 auto;
+                    }
+                }
+                /* Tablet setting fixes */
+                
+                @media all and (max-width:910px) {
+                    header h1 {
+                        display: inline-block;
+                        font-size: 4em;
+                        line-height: 50px;
+                    }
+                    img.logo {
+                        display: inline-block;
+                        margin: 0 auto;
+                        width: 20%;
+                        max-width: 50%;
+                        border-radius: 50%;
+                        clear: both;
+                    }
+                }
+                /* Wider PHONE Settings */
+                
+                @media all and (max-width:800px) {
+                    div.wrapper {
+                        background-color: blue;
+                    }
+                    header:before {
+                        height: 40px;
+                        line-height: 40px;
+                        vertical-align: middle;
+                    }
+                    button {
+                        margin: 1em;
+                    }
+                    header h1 {
+                        text-align: center;
+                        font-size: 4em;
+                    }
+                    section {
+                        width: 95%;
+                    }
+                    img.logo {
+                        margin: 0 auto;
+                        width: 15%;
+                        display: none;
+                    }
+                    header {
+                        background: url("../images/owl.jpg") no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        max-height: 80%;
+                        width: 80%;
+                    }
+                    p.footnote {
+                        width: 95%;
+                    }
+                }
